@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?><project-modules id="moduleCoreId" project-version="1.5.0">
+    <wb-module deploy-name="Lottery">
+        <wb-resource deploy-path="/" source-path="/WebContent" tag="defaultRootSource"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/src"/>
+        <dependent-module archiveName="nekohtml.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/D:/Truman/lib/nekohtml.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="dom4j-1.6.1.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/D:/Truman/lib/dom4j-1.6.1.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="mysql-connector-java-5.1.17-bin.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/D:/Truman/lib/mysql-connector-java-5.1.17-bin.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="xercesImpl-2.6.2.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/D:/Truman/lib/xercesImpl-2.6.2.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="zweb.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/D:/Truman/lib/zkce-bin-6.5.1.1/dist/lib/zweb.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="zk.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/D:/Truman/lib/zkce-bin-6.5.1.1/dist/lib/zk.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="zel.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/D:/Truman/lib/zkce-bin-6.5.1.1/dist/lib/zel.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="zul.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/D:/Truman/lib/zkce-bin-6.5.1.1/dist/lib/zul.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="zhtml.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/D:/Truman/lib/zkce-bin-6.5.1.1/dist/lib/zhtml.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="zkbind.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/D:/Truman/lib/zkce-bin-6.5.1.1/dist/lib/zkbind.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="zcommon.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/D:/Truman/lib/zkce-bin-6.5.1.1/dist/lib/zcommon.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="zkplus.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/D:/Truman/lib/zkce-bin-6.5.1.1/dist/lib/zkplus.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="dom4j-1.6.1.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib//home/truman/lib/dom4j-1.6.1.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="nekohtml.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib//home/truman/lib/nekohtml.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="xercesImpl-2.6.2.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib//home/truman/lib/xercesImpl-2.6.2.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <property name="context-root" value="Lottery"/>
+        <property name="java-output-path" value="/Lottery/build/classes"/>
+    </wb-module>
+</project-modules>

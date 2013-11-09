@@ -1,0 +1,28 @@
+<?page title="" contentType="text/html;charset=UTF-8"?>
+
+
+<zk>
+	 
+	     <style src="css/Example2.css" />
+		 <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js" />
+		 <script type="text/javascript" src="js/script.js" />
+	<html>
+	<h:body xmlns:h="http://www.w3.org/1999/xhtml">
+	<h:div id="formContainer">
+			<h:form id="login" method="post" action="./" xmlns:h="http://www.w3.org/1999/xhtml">
+				<h:a href="#" id="flipToRecover" class="flipLink">Forgot?</h:a>
+				<h:input type="text" name="loginEmail" id="loginEmail" value="Email" />
+				<h:input type="password" name="loginPass" id="loginPass" value="pass" />
+				<h:input type="submit" name="submit" value="Login" />
+			</h:form>
+			<h:form id="recover" method="post" action="./" xmlns:h="http://www.w3.org/1999/xhtml">
+				<h:a href="#" id="flipToLogin" class="flipLink">Forgot?</h:a>
+				<h:input type="text" name="recoverEmail" id="recoverEmail" value="Email" />
+				<h:input type="submit" name="submit" value="Recover" />
+			</h:form>
+		</h:div>
+		</h:body>
+	</html>
+	
+	 
+</zk>

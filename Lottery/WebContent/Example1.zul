@@ -1,0 +1,11 @@
+<?page title="" contentType="text/html;charset=UTF-8"?>
+<zk>
+	<style src="css/Example1.css" />
+	<window width="100%" height="100%" title="" border="none">
+		 <groupbox>
+			<textbox width="89%" placeholder="Enter your User id" />
+			<textbox width="89%" placeholder="Enter your password" />
+			<button label="Log in" width="100%" height="49px" mold="trendy"></button>
+		 </groupbox>
+	</window>
+</zk>

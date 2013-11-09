@@ -1,0 +1,60 @@
+<?page title="LOTTERY" contentType="text/html;charset=UTF-8"?>
+<zk>
+<window title="LOTTERY" border="normal" apply="org.zkoss.bind.BindComposer"
+	viewModel="@id('vm') @init('truman.lotteryViewCtrl')">
+<hlayout>
+<listbox id="lstLotterys" sizedByContent="true" width="280px"
+			selectedItem="@bind(vm.selectedStage)" model="@bind(vm.lotteryData)"
+			mold="paging" pageSize="10" pagingPosition="bottom" vflex="true"
+			onSelect="@command('showNums')">
+			<listhead>
+				<listheader label="期數" />
+			</listhead>
+			<template name="model" var="lns">
+				<listitem value="@load(lns)">
+					<listcell>
+						<label value="@load(lns.stage)" />
+					</listcell>
+
+
+				</listitem>
+			</template>
+			
+</listbox>
+<grid width="430px">
+<columns>
+<column width="60px" />
+<column width="60px" />
+<column width="60px" />
+<column width="60px" />
+<column width="60px" />
+<column width="60px" />
+<column width="60px" />
+</columns>
+<rows>
+<row height="60px"><label width="60x"  value="@load(vm.plate[0][0])" /><label width="60x"  value="@load(vm.plate[0][1])" /><label width="60x"  value="@load(vm.plate[0][2])" /><label width="60x"  value="@load(vm.plate[0][3])" />
+	<label width="60x"  value="@load(vm.plate[0][4])" /><label width="60x"  value="@load(vm.plate[0][5])" /><label width="60x"  value="@load(vm.plate[0][6])" />
+</row>
+<row height="60px"><label width="60x"  value="@load(vm.plate[1][0])" /><label width="60x"  value="@load(vm.plate[1][1])" /><label width="60x"  value="@load(vm.plate[1][2])" /><label width="60x"  value="@load(vm.plate[1][3])" />
+	<label width="60x"  value="@load(vm.plate[1][4])" /><label width="60x"  value="@load(vm.plate[1][5])" /><label width="60x"  value="@load(vm.plate[1][6])" />
+</row>
+<row height="60px"><label width="60x"  value="@load(vm.plate[2][0])" /><label width="60x"  value="@load(vm.plate[2][1])" /><label width="60x"  value="@load(vm.plate[2][2])" /><label width="60x"  value="@load(vm.plate[2][3])" />
+	<label width="60x"  value="@load(vm.plate[2][4])" /><label width="60x"  value="@load(vm.plate[2][5])" /><label width="60x"  value="@load(vm.plate[2][6])" />
+</row>
+<row height="60px"><label width="60x"  value="@load(vm.plate[3][0])" /><label width="60x"  value="@load(vm.plate[3][1])" /><label width="60x"  value="@load(vm.plate[3][2])" /><label width="60x"  value="@load(vm.plate[3][3])" />
+	<label width="60x"  value="@load(vm.plate[3][4])" /><label width="60x"  value="@load(vm.plate[3][5])" /><label width="60x"  value="@load(vm.plate[3][6])" />
+</row>
+<row height="60px"><label width="60x"  value="@load(vm.plate[4][0])" /><label width="60x"  value="@load(vm.plate[4][1])" /><label width="60x"  value="@load(vm.plate[4][2])" /><label width="60x"  value="@load(vm.plate[4][3])" />
+	<label width="60x"  value="@load(vm.plate[4][4])" /><label width="60x"  value="@load(vm.plate[4][5])" /><label width="60x"  value="@load(vm.plate[4][6])" />
+</row>
+<row height="60px"><label width="60x"  value="@load(vm.plate[5][0])" /><label width="60x"  value="@load(vm.plate[5][1])" /><label width="60x"  value="@load(vm.plate[5][2])" /><label width="60x"  value="@load(vm.plate[5][3])" />
+	<label width="60x"  value="@load(vm.plate[5][4])" /><label width="60x"  value="@load(vm.plate[5][5])" /><label width="60x"  value="@load(vm.plate[5][6])" />
+</row>
+<row height="60px"><label width="60x"  value="@load(vm.plate[6][0])" /><label width="60x"  value="@load(vm.plate[6][1])" /><label width="60x"  value="@load(vm.plate[6][2])" /><label width="60x"  value="@load(vm.plate[6][3])" />
+	<label width="60x"  value="@load(vm.plate[6][4])" /><label width="60x"  value="@load(vm.plate[6][5])" /><label width="60x"  value="@load(vm.plate[6][6])" />
+</row>
+</rows>
+</grid>
+</hlayout>
+</window>
+</zk>
