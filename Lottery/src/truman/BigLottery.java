@@ -6,7 +6,8 @@ import java.util.Collections;
 import java.util.List;
 
 import org.cyberneko.html.parsers.DOMParser;
-import org.w3c.dom.Node;
+import org.w3c.dom.Document;
+import org.w3c.dom.NodeList;
 import org.xml.sax.SAXException;
 
 public class BigLottery {
@@ -42,14 +43,14 @@ public class BigLottery {
 		return result;
 	}
 
-	static private void getSpecialNumber(List<NumArea> areaList){
+/*	static private void getSpecialNumber(List<NumArea> areaList){
 		Collections.sort(areaList, new NumComparator2()); // 特別號區別排序
 		int num = (int) (11 * 13 * 19 * 10103 * Math.random() / 17) % 8; // 亂數
 		List<LotNum> numList = areaList.get(num).members;
 		int seed = numList.size();
 		num = (int) (11 * 13 * 19 * 10103 * Math.random() / 17) % seed;
 		System.out.printf("%d \n", numList.get(num).value);		
-	}	
+	}*/	
 	/**
 	 * @param args
 	 */
@@ -133,8 +134,8 @@ public class BigLottery {
 		try {
 			DOMParser parser = new DOMParser();
 			parser.parse(url + 1);
-			org.w3c.dom.Document document = parser.getDocument();
-			org.w3c.dom.NodeList bnodes = document.getFirstChild()
+			Document document = parser.getDocument();
+			NodeList bnodes = document.getFirstChild()
 					.getFirstChild().getNextSibling().getChildNodes();
 			String pages = bnodes.item(6).getTextContent();
 			int ipages = Integer.parseInt(pages.substring(pages.indexOf("有")+1, pages.indexOf("頁")));
@@ -146,9 +147,9 @@ public class BigLottery {
 //				for(int i=0;i<bnodes.getLength();i++){
 //					System.out.println(bnodes.item(i).getNodeName());
 //				}
-				org.w3c.dom.NodeList dnodes = bnodes.item(4).getFirstChild()
+				NodeList dnodes = bnodes.item(4).getFirstChild()
 						.getNextSibling().getChildNodes();// BODY
-				org.w3c.dom.NodeList trs = dnodes.item(1).getFirstChild()
+				NodeList trs = dnodes.item(1).getFirstChild()
 						.getNextSibling().getChildNodes();// CENTER
 
 				// System.out.println("got here"+bnodes.toString()+"length:"+trs.getLength());
@@ -156,7 +157,7 @@ public class BigLottery {
 					int[] acount = { 0, 0, 0, 0, 0, 0, 0, 0, 0 };
 
 					t++;
-					org.w3c.dom.NodeList tds = trs.item(i).getChildNodes();
+					NodeList tds = trs.item(i).getChildNodes();
 					si = tds.item(7).getTextContent();
 
 					int dsi = Integer.parseInt(si);
